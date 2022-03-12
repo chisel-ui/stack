@@ -1,4 +1,4 @@
-# `@chisel-ui/core`
+# `@chisel-ui/stack`
 
 > WIP: This experiment is brand new and not ready for the real world!
 
