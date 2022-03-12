@@ -1,0 +1,18 @@
+---
+import { Gutter, getSafeGutter, BaseTheme } from '@chisel-ui/core'
+import './stack.css'
+
+export interface StackProps {
+    gutter?: Gutter
+    theme?: BaseTheme
+    as?: string
+}
+
+const { gutter, theme, as: Tag = 'div', ...props } = Astro.props as StackProps
+
+const maybeGutter = getSafeGutter(theme, gutter)
+---
+
+<Tag data-bedrock-stack style={`--gutter: ${maybeGutter}`}>
+    <slot />
+</Tag>
