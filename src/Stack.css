@@ -4,17 +4,17 @@
     initial-value; 0px;
 }    
 
-[data-bedrock-stack] {
+[data-chisel-stack] {
     box-sizing: border-box;
     display: grid;
     gap: var(--gutter, 0px);
     align-content: start;
 }
 
-[data-bedrock-stack] > * {
+[data-chisel-stack] > * {
     margin: 0;
 }
 
-[data-bedrock-stack] > [data-bedrock-column] {
+[data-chisel-stack] > [data-chisel-column] {
     grid-column: span 1 / auto;
 }

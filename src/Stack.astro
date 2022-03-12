@@ -13,6 +13,6 @@ const { gutter = '0px', theme = {}, as: Tag = 'div', ...props } = Astro.props as
 const maybeGutter = getSafeGutter(theme, gutter)
 ---
 
-<Tag data-bedrock-stack style={`--gutter: ${maybeGutter}`}>
+<Tag data-chisel-stack style={`--gutter: ${maybeGutter}`}>
     <slot />
 </Tag>
