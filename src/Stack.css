@@ -2,10 +2,10 @@
     syntax: "<length-percentage>";
     inherits: false;
     initial-value; 0px;
-}
+}    
 
 data-bedrock-stack {
-    bod-sizing: border-box;
+    box-sizing: border-box;
     display: grid;
     gap: var(--gutter, 0px);
     align-content: start;

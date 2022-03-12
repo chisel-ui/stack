@@ -3,19 +3,17 @@
     "version": "0.0.1",
     "description": "chisel-ui stack layout primitive",
     "private": false,
-    "main": "./dist/index.js",
-    "module": "./dist/index.mjs",
-    "types": "./dist/index.d.ts",
+    "type": "module",
     "exports": {
-        ".": {
-            "require": "./dist/index.js",
-            "import": "./dist/index.mjs",
-            "type": "./dist/index.d.ts"
-        },
+        "./css": "./dist/Stack.css",
         "./astro": "./src/Stack.astro"
     },
+    "files": [
+        "src/Stack.astro",
+        "dist/Stack.css"
+    ],
     "scripts": {
-        "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+        "build": "tsup src/Stack.css --clean",
         "watch": "npm run build -- --watch src",
         "prepublishOnly": "npm run build"
     },
@@ -24,6 +22,7 @@
         "url": "git+https://github.com/chisel-ui/stack.git"
     },
     "keywords": [
+        "astro",
         "stack",
         "layout"
     ],
