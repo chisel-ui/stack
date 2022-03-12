@@ -33,7 +33,8 @@
     },
     "homepage": "https://github.com/chisel-ui/stack#readme",
     "devDependencies": {
-        "@chisel-ui/core": "^0.0.1",
+        "@chisel-ui/core": "^0.0.2",
+        "astro": "^0.24.0",
         "autoprefixer": "^10.4.2",
         "postcss": "^8.4.8",
         "tsup": "^5.12.1",
