@@ -1,18 +1,17 @@
 ---
-import { Gutter, getSafeGutter, BaseTheme } from '@chisel-ui/core'
+import { getSafeGutter } from '@chisel-ui/core'
 import './Stack.css'
+import type { LayoutProps } from '@chisel-ui/core'
 
-export interface StackProps {
-    gutter?: Gutter
-    theme?: BaseTheme
-    as?: string
+export interface StackProps extends LayoutProps {
+    style?: string
 }
 
-const { gutter = '0px', theme = {}, as: Tag = 'div', ...props } = Astro.props as StackProps
+const { gutter = '0px', theme = {}, as: Tag = 'div', style, ...props } = Astro.props as StackProps
 
 const maybeGutter = getSafeGutter(theme, gutter)
 ---
 
-<Tag data-chisel-stack style={`--gutter: ${maybeGutter}`}>
+<Tag data-chisel-stack style={`--gutter: ${maybeGutter};${style}`} {...props}>
     <slot />
 </Tag>
