@@ -7,7 +7,7 @@ export interface StackProps extends LayoutProps {
     style?: string
 }
 
-const { gutter = '0px', theme = {}, as: Tag = 'div', style, ...props } = Astro.props as StackProps
+const { gutter = '0px', theme = {}, as: Tag = 'div', style = '', ...props } = Astro.props as StackProps
 
 const maybeGutter = getSafeGutter(theme, gutter)
 ---
