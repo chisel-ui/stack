@@ -29,7 +29,7 @@
 	},
 	"homepage": "https://github.com/chisel-ui/stack#readme",
 	"devDependencies": {
-		"@chisel-ui/core": "^0.1.1",
+		"@chisel-ui/core": "^0.1.2",
 		"husky": "^7.0.4",
 		"lint-staged": "^12.3.7",
 		"prettier": "^2.6.0",
