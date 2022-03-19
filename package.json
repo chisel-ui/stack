@@ -1,14 +1,10 @@
 {
 	"name": "@chisel-ui/stack",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "chisel-ui stack layout primitive",
 	"private": false,
 	"type": "module",
-	"exports": {
-		".": "./index.ts"
-	},
 	"files": [
-		"index.ts",
 		"Stack.astro"
 	],
 	"scripts": {
