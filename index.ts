@@ -1,0 +1,1 @@
+export { default, default as Stack, StackProps } from './Stack.astro';

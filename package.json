@@ -1,22 +1,22 @@
 {
     "name": "@chisel-ui/stack",
-    "version": "0.0.5",
+    "version": "0.1.0",
     "description": "chisel-ui stack layout primitive",
     "private": false,
     "type": "module",
     "exports": {
-        "./css": "./dist/Stack.css",
-        "./astro": "./src/Stack.astro"
+        ".": "./index.ts"
     },
     "files": [
-        "src",
-        "dist"
+        "index.ts",
+        "Stack.astro"
     ],
     "scripts": {
-        "build": "tsup src/Stack.css --clean",
-        "watch": "npm run build -- --watch src",
-        "prepublishOnly": "npm run build"
-    },
+		"prepare": "husky install"
+	},
+	"lint-staged": {
+		"**/*": "prettier --write --ignore-unknown"
+	},
     "repository": {
         "type": "git",
         "url": "git+https://github.com/chisel-ui/stack.git"
@@ -33,13 +33,9 @@
     },
     "homepage": "https://github.com/chisel-ui/stack#readme",
     "devDependencies": {
-        "@chisel-ui/core": "^0.0.5",
-        "autoprefixer": "^10.4.2",
-        "postcss": "^8.4.8",
-        "tsup": "^5.12.1",
-        "typescript": "^4.6.2"
-    },
-    "peerDependencies": {
-        "astro": "^0.24.0"
+        "@chisel-ui/core": "^0.1.1",
+        "husky": "^7.0.4",
+		"lint-staged": "^12.3.7",
+		"prettier": "^2.6.0"
     }
 }
