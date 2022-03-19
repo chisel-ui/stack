@@ -1,41 +1,42 @@
 {
-    "name": "@chisel-ui/stack",
-    "version": "0.1.0",
-    "description": "chisel-ui stack layout primitive",
-    "private": false,
-    "type": "module",
-    "exports": {
-        ".": "./index.ts"
-    },
-    "files": [
-        "index.ts",
-        "Stack.astro"
-    ],
-    "scripts": {
+	"name": "@chisel-ui/stack",
+	"version": "0.1.0",
+	"description": "chisel-ui stack layout primitive",
+	"private": false,
+	"type": "module",
+	"exports": {
+		".": "./index.ts"
+	},
+	"files": [
+		"index.ts",
+		"Stack.astro"
+	],
+	"scripts": {
 		"prepare": "husky install"
 	},
 	"lint-staged": {
 		"**/*": "prettier --write --ignore-unknown"
 	},
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/chisel-ui/stack.git"
-    },
-    "keywords": [
-        "astro",
-        "stack",
-        "layout"
-    ],
-    "author": "tony-sull <tony.f.sullivan@outlook.com>",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/chisel-ui/stack/issues"
-    },
-    "homepage": "https://github.com/chisel-ui/stack#readme",
-    "devDependencies": {
-        "@chisel-ui/core": "^0.1.1",
-        "husky": "^7.0.4",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/chisel-ui/stack.git"
+	},
+	"keywords": [
+		"astro",
+		"stack",
+		"layout"
+	],
+	"author": "tony-sull <tony.f.sullivan@outlook.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/chisel-ui/stack/issues"
+	},
+	"homepage": "https://github.com/chisel-ui/stack#readme",
+	"devDependencies": {
+		"@chisel-ui/core": "^0.1.1",
+		"husky": "^7.0.4",
 		"lint-staged": "^12.3.7",
-		"prettier": "^2.6.0"
-    }
+		"prettier": "^2.6.0",
+		"prettier-plugin-astro": "^0.0.12"
+	}
 }
