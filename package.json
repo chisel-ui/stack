@@ -1,6 +1,6 @@
 {
 	"name": "@chisel-ui/stack",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "chisel-ui stack layout primitive",
 	"private": false,
 	"type": "module",
